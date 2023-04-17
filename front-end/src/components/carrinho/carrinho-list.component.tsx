@@ -183,7 +183,6 @@ export default class carrinholist extends Component<Props, State>{
     const { searchTitle, itensCarrinho, currentItem, currentIndex } = this.state;
    
      
-      console.log(itensCarrinho);
     return (
       <div className="list row">
 
@@ -264,10 +263,8 @@ export default class carrinholist extends Component<Props, State>{
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small"  onClick={() => this.finalizarCompra(currentItem)}
-                  >Finalizar Comprar
-                  </Button>
-                 
+                
+                  <Link to={{pathname: "/comprar",  state: itensCarrinho }}> Comprar Agora</Link>
                 </CardActions>
               </Card>
             </div>

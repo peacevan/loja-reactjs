@@ -6,6 +6,8 @@ export default interface ICompraData {
     id_cliente: number,
     total_itens: number,
     total_compra :number,
-    created_at:string
+    created_at:string,
     intens_compra: ICarrinhoData[]| null,
+    endereco:string |null,
+    telefone:string|null,
 }     
