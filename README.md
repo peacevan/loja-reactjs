@@ -1,2 +1,2 @@
 # loja-reactjs
-Loja em virtual em  reactjs 
+Loja  virtual em  reactjs 
